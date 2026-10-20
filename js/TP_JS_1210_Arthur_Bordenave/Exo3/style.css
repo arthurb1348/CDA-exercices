@@ -1,0 +1,29 @@
+button {
+    margin: 50px 0 10px 10px;
+    background-color: #004cf0;
+    color:azure;
+    width: 64px;
+    height: 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+#tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+}
+
+#tags-list li {
+    background-color: #e4ece8;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: dashed 1px #004cf0;
+}
+
+#erreur {
+    color: red;
+}
