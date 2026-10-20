@@ -1,0 +1,115 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333333;
+    font-family: Open Sans;
+    padding: 0 20px;
+}
+
+button:not(.form-button), form {
+    background-color: #e0e0e0;
+}
+
+a:hover, button:hover {
+    background-color: #3b82f6;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    background-color: #facc15;
+}
+
+h1 {
+    font-family: Montserrat;
+    padding: 0 20px;
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: Nunito Sans;
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-family: Nunito Sans;
+    font-size: 3rem;
+}
+
+p, li, a, button, input, textarea, label, pre, code {
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    background-color: #b3b3b3;
+}
+
+#logo-s {
+    width: 60px;
+    height: auto;
+    padding: 0 20px 0 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+}  
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+    max-width: 600px;
+    gap: 10px;
+}
+
+#checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#form-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+#form-fields {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#name-container, #email-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo-l {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    padding: 20px;
+    align-items: center;
+    gap: 10px;
+    background-color: #b3b3b3;
+}
+

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>tp-0910</title>
+  </head>
+  <body>
+    <div id="app">
+        <div id="avatar">
+            <button type="button" id="previous">
+                <img src="asset/img/arrow_left.png" alt="Coupe précédente">
+            </button>
+            <div class="portrait">
+                <img src="asset/img/face-1.png" alt="Visage">
+                <img id="hair" src="asset/img/hair-black-1.png" alt="Coiffure de l’avatar">
+            </div>
+            <button type="button" id="next">
+                <img src="asset/img/arrow_right.png" alt="Coupe suivante">
+            </button>
+        </div>
+        <div class="colors">
+            <h2>Couleur des Cheveux</h2>
+            <div class="color-options">
+                <button
+                    type="button"
+                    class="color-button"
+                    data-color="black"
+                    aria-label="Cheveux noirs">
+                </button>
+                <button
+                    type="button"
+                    class="color-button"
+                    data-color="blond"
+                    aria-label="Cheveux blonds">
+                </button>
+                <button
+                    type="button"
+                    class="color-button"
+                    data-color="turquoise"
+                    aria-label="Cheveux turquoises">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

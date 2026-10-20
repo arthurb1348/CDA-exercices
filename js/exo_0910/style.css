@@ -1,0 +1,33 @@
+.test {
+    color: red;
+}
+
+.maCouleur {
+    color: violet;
+}
+
+.image-clic {
+    position: absolute;
+    width: 40px;  
+    height: 40px; 
+    transform: translate(-50%, -50%); /* Centre l'image pile sur la pointe du curseur */
+    pointer-events: none; /* Évite que l'image bloque les clics suivants au même endroit */
+}
+
+body {min-height: 5000px;}
+
+h1 {text-align: center; margin: 60px;}
+
+.boxBar {
+    width: 100%;
+    border: 5px solid royalblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bar {
+    height: 20px;
+    background: royalblue;
+    width: 0%;
+}

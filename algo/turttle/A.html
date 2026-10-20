@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>HTML5 canvas turtle graphics</title>
+        <style>
+article, aside, figure, footer, header, hgroup, 
+menu, nav, section { display: block; }
+canvas {border: 1px dotted #564b47; position: absolute; top: 0; left: 0;}
+#turtleCanvas {pointer-events: none;}
+        </style>
+    </head>
+
+    <body>
+        <h1>HTML5 canvas turtle graphics</h1>
+
+        <div style="position: relative">
+            <canvas id="myDrawing" width="600" height="600"></canvas>
+            <canvas id="turtleCanvas" width="600" height="600"></canvas>
+        </div>
+
+        <script src="turtle.js"></script>
+        <script src="anim.js"></script>
+        <script src="serieA.js"></script>
+        <script src="serieB.js"></script>
+        <script src="serieC.js"></script>
+        <script src="serieD.js"></script>
+        <script src="serieBonus.js"></script>
+
+        <script>
+            function draw() {
+    faceLeft();
+    down();
+    arcRight(r, 360);
+    up();
+    forward(200);
+    down();
+    arcRight(r, 360);
+    up();
+}
+
+function shift() {
+    if( r >= 100  ) {
+        shiftColor(0.25);
+    } else if ( r >= 100 - width/2 ) {
+        shiftColor(0)
+    } else
+        {shiftColor(0.75);
+    }
+}
+
+function mv() {
+    backward(200);
+    faceUp();
+    forward(width);
+    shift();
+    r -= width;
+}
+
+let nc = 20;
+
+let width = 175 / nc;
+let rb = 175 - (width / 2);
+let r = rb;
+
+setPos(300, 300);
+setLineWidth(width);
+faceRight();
+shiftColor(0);
+
+up();
+forward(100);
+faceDown();
+forward(rb);
+
+while( r > 25 - ( width / 2 )) {
+    draw();
+    mv();
+}
+
+
+         </script>
+
+    </body>
+</html>

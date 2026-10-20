@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>HTML5 canvas turtle graphics</title>
+        <style>
+article, aside, figure, footer, header, hgroup, 
+menu, nav, section { display: block; }
+canvas {border: 1px dotted #564b47; position: absolute; top: 0; left: 0;}
+#turtleCanvas {pointer-events: none;}
+        </style>
+    </head>
+
+    <body>
+        <h1>HTML5 canvas turtle graphics</h1>
+
+        <div style="position: relative">
+            <canvas id="myDrawing" width="600" height="600"></canvas>
+            <canvas id="turtleCanvas" width="600" height="600"></canvas>
+        </div>
+
+        <script src="turtle.js"></script>
+        <script src="anim.js"></script>
+        <script src="serieA.js"></script>
+        <script src="serieB.js"></script>
+        <script src="serieC.js"></script>
+        <script src="serieD.js"></script>
+        <script src="serieBonus.js"></script>
+
+        <script>
+            // Demo
+
+            // Change the turtle position
+            setPos(300, 400);
+
+            // Face to a specific side
+            faceUp();
+            // faceDown(), faceRight(), faceLeft()
+
+            // Change the color 
+            // Predefined colors are : white, black, red, green, blue, yellow, fuchsia, aqua ; all with the "color." prefix
+            changeColor(color.blue);
+            // You can also specify a color with its RGB notation
+            // changeColor("#8b22b5");
+            
+            // Move forward
+            forward(200);
+
+            // Set the line width
+            setLineWidth(10);
+
+            // Move backward
+            backward(100);
+
+            // Draw an arc on the turtle's left, given a radius and an angle
+            arcLeft(50, 90);
+
+            // Draw an arc on the turtle's right, given a radius and an angle
+            arcRight(100, 270);
+
+            // Stop drawing
+            up();
+
+            forward(250);
+            changeColor(color.red);
+
+            // Resume drawing
+            down();
+            arcRight(50, 180);
+        </script>
+
+    </body>
+</html>
